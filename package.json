@@ -46,7 +46,7 @@
     "topojson": "^3.0.2"
   },
   "scripts": {
-    "start": "PORT=process.env.port react-scripts start",
+    "start": "PORT=process.env.PORT react-scripts start",
     "build": "react-scripts build && npm run compress_maps && cp build/index.html build/404.html",
     "map_test": "react-scripts test src/__tests__/mapAndApiStateNames.test.js",
     "compress_maps": "rollup -c",
