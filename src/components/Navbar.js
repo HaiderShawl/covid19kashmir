@@ -14,6 +14,7 @@ import {useLockBodyScroll, usePageLeave, useWindowSize} from 'react-use';
 import useDarkMode from 'use-dark-mode';
 
 function Navbar({pages, showLanguageSwitcher, setShowLanguageSwitcher}) {
+  const {t} = useTranslation();
   const [expand, setExpand] = useState(false);
   const darkMode = useDarkMode(false);
 
