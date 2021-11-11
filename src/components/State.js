@@ -88,6 +88,9 @@ function State() {
     refreshInterval: 100000,
   });
 
+  console.log(data?.['JK'])
+
+
   const stateData = data?.[stateCode];
 
   const toggleShowAllDistricts = () => {
@@ -361,18 +364,7 @@ function State() {
               </div>
             </div>
 
-            <Suspense fallback={<div />}>
-              <TimeseriesExplorer
-                {...{
-                  stateCode,
-                  timeseries,
-                  regionHighlighted,
-                  setRegionHighlighted,
-                  noRegionHighlightedDistrictData,
-                }}
-                forceRender={!!timeseriesResponseError}
-              />
-            </Suspense>
+            
           </>
         </div>
       </div>

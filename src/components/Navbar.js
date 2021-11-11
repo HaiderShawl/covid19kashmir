@@ -43,7 +43,8 @@ function Navbar({pages, showLanguageSwitcher, setShowLanguageSwitcher}) {
 
   return navbarTransition((style, item) => (
     <animated.div className="Navbar" {...{style}}>
-      <div className="navbar-middle">
+      <div className="navbar-right"></div>
+      <div className="navbar-middle" style={{marginLeft:15}}>
         <Link to="/" onClick={setExpand.bind(this, false)}>
           Covid19<span>Kashmir</span>
         </Link>
